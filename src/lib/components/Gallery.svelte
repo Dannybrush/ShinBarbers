@@ -1,7 +1,7 @@
 <!--   Gallery.svelte -->  
 <script>
   export let images = [
-    '/path/to/image1.jpg',
+    '/logo.jpg',
     '/path/to/image2.jpg',
     '/path/to/image3.jpg'
   ];
@@ -9,9 +9,10 @@
 
 <style>
   .gallery {
-    padding: 4rem 1rem;
+    padding: 4rem 4rem;
     background: #111;
     color: #fff;
+    text-align: right;
   }
   h2 {
     font-size: 2.5rem;

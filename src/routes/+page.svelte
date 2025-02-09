@@ -3,6 +3,7 @@
     import Hero from '$lib/components/Hero.svelte';
     import About from '$lib/components/About.svelte';
     import Services from '$lib/components/Services.svelte';
+    import OpeningTimes from '$lib/components/OpeningTimes.svelte';
     import Gallery from '$lib/components/Gallery.svelte';
     import Contact from '$lib/components/Contact.svelte';
   </script>
@@ -26,6 +27,7 @@
     <Hero />
     <About />
     <Services />
+    <OpeningTimes />
     <Gallery />
     <Contact />
   </main>
