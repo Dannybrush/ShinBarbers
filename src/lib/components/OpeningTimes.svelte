@@ -1,13 +1,13 @@
 <!--  OpeningTimes.svelte --> 
 <script>
     export let OTime = [
-      { day: "Monday", timeString: "08:00 - 17:30" },
-      { day: "Tuesday", timeString: "08:00 - 17:30" },
-      { day: "Wednesday", timeString: "08:00 - 17:30" },
-      { day: "Thursday", timeString: "08:00 - 17:30" },
-      { day: "Friday", timeString: "08:00 - 17:30" },
-      { day: "Saturday", timeString: "08:00 - 17:30" },
-      { day: "Sunday", timeString: "08:00 - 17:30" },
+      { day: "Monday", timeString: "09:00 - 18:30" },
+      { day: "Tuesday", timeString: "09:00 - 18:30" },
+      { day: "Wednesday", timeString: "09:00 - 18:30" },
+      { day: "Thursday", timeString: "09:00 - 18:30" },
+      { day: "Friday", timeString: "09:00 - 18:30" },
+      { day: "Saturday", timeString: "08:30 - 17:30" },
+      { day: "Sunday", timeString: "10:00 - 16:30" },
       { day: "Bank Holidays", timeString: "08:00 - 17:30" }
     ];
   </script>

@@ -6,6 +6,8 @@
     import OpeningTimes from '$lib/components/OpeningTimes.svelte';
     import Gallery from '$lib/components/Gallery.svelte';
     import Contact from '$lib/components/Contact.svelte';
+    import Sep from '$lib/components/Sep.svelte';
+    import Team from '$lib/components/Team.svelte'
   </script>
   
   <style>
@@ -25,10 +27,22 @@
   
   <main>
     <Hero />
+    <Sep />
+
     <About />
+    <Sep />
+
     <Services />
+    <Sep />
+
     <OpeningTimes />
+    <Sep />
+
     <Gallery />
+    <Sep />
+
     <Contact />
+    <Sep />
+    <Team />
   </main>
   

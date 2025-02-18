@@ -1,8 +1,8 @@
 <!--  Contact.svelte  --> 
 <script>
-  export let phone = "(123) 456-7890";
+  export let phone = "+44 (0) 7474 423200";
   export let email = "info@barbershop.com";
-  export let address = "123 Barber Street, City, Country";
+  export let address = "9 School Grn, Shinfield, Reading RG2 9EE";
 </script>
 
 <style>
@@ -20,7 +20,7 @@
   }
 </style>
 
-<section class="contact">
+<section id="contact" class="contact">
   <h2>Contact Us</h2>
   <div class="contact-info">
     <p>Phone: {phone}</p>

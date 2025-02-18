@@ -23,10 +23,28 @@
       font-size: 1.5rem;
       color: #ccc;
     }
+    .cta-button {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background-color: #00B4D8;
+      color: white;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #0077B6;
+    }
   </style>
+  
   
   <section class="hero">
     <h1>{title}</h1>
     <p>{subtitle}</p>
+    <button class="cta-button" on:click={() => document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' })}>
+        Book an Appointment
+      </button>
   </section>
-  
+
