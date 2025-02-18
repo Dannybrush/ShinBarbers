@@ -10,7 +10,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/path/to/hero-image.jpg') no-repeat center center;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/hero-image.jpg') no-repeat center center;
       background-size: cover;
       text-align: center;
     }
