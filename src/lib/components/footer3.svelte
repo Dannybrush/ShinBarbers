@@ -16,9 +16,10 @@
       </div>
       <div class="footer-section social">
         <h3>Follow Us</h3>
-        <a href="#"><img src="/icons/facebook.svg" alt="Facebook" /></a>
-        <a href="#"><img src="/icons/instagram.svg" alt="Instagram" /></a>
-        <a href="#"><img src="/icons/twitter.svg" alt="Twitter" /></a>
+        <a href="#"><img src="/icons/FaceBook.png" alt="Facebook" /></a>
+        <a href="#"><img src="/icons/Insta.png" alt="Instagram" /></a>
+        <a href="#"><img src="/icons/whatsapps.png" alt="Twitter" /></a>
+        <a href="#"><img src="/icons/LinkedIn.png" alt="Facebook" /></a>
       </div>
     </div>
     <div class="footer-bottom">
