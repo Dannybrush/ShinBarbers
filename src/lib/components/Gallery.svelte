@@ -1,9 +1,10 @@
 <!--   Gallery.svelte -->  
 <script>
   export let images = [
-    '/logo.jpg',
-    '/path/to/image2.jpg',
-    '/path/to/image3.jpg'
+    //'/logo.jpg',
+    '/stock-1.jpg',
+    '/stock-2.jpg',
+    '/stock-3.jpg'
   ];
 </script>
 
