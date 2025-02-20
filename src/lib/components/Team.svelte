@@ -13,13 +13,14 @@
       <p>Expert in modern cuts and styling.</p>
     </div>
     <!-- Add more barbers as needed -->
+     <!-- Background colour was #333 -->
   </div>
 </section>
 
 <style>
   .team {
     padding: 4rem 1rem;
-    background: #333;
+    Background: #222 ;
     color: #fff;
     text-align: center;
   }
