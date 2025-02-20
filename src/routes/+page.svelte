@@ -11,6 +11,7 @@
  //   import F1 from '$lib/components/footer1.svelte';
     import F2 from '$lib/components/footer2.svelte';
     import F3 from '$lib/components/footer3.svelte';
+    import Csstest from '$lib/example/cssvariablesusage.svelte'
 
   </script>
   
@@ -45,21 +46,15 @@
     <Gallery />
     <Sep />
 
-    <Contact />
-    <Sep />
+
     <Team />
 
     <Sep/>
 
-    <!--
-    <F1/> 
-    <Sep/>
-    <F2/>
-    <Sep/>
-  --> 
     <F3/>
     <Sep/>
     <Sep/>
+    <Csstest/>
 
 
     

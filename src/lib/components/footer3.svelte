@@ -29,7 +29,7 @@
   
   <style>
     .footer.grid {
-      background: #333;
+      background: #000;
       color: #fff;
       padding: 2rem;
       font-size: 0.9rem;
@@ -63,6 +63,7 @@
     .footer-section.social img {
       width: 100%;
       height: auto;
+      background-color: #fff;
     }
     .footer-bottom {
       text-align: center;

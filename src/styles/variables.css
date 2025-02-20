@@ -1,0 +1,13 @@
+/* src/styles/variables.css */
+:root {
+    --primary-color: #0077B6;
+    --secondary-color: #03045E;
+    --background-dark: #333;
+    --background-darker: #222;
+    --text-color: #fff;
+    --font-family: 'Helvetica Neue', sans-serif;
+    --spacing-base: 1rem;
+    --padding-large: 4rem;
+    --padding-medium: 2rem;
+  }
+  

@@ -1,0 +1,14 @@
+/* src/app.css */
+@import "./styles/variables.css";
+
+
+/* Additional global styles and utility classes can be added here */
+/*
+body {
+
+    font-family: var(--font-family);
+    margin: 0;
+    background-color: var(--background-dark);
+    color: var(--text-color);
+  }
+   */ 
