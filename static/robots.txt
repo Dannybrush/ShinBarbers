@@ -1,0 +1,6 @@
+# Update the domain below (and business.siteUrl in src/lib/data/site.js)
+# once the site is live at its real domain.
+User-agent: *
+Allow: /
+
+Sitemap: https://www.shinbarbers.co.uk/sitemap.xml

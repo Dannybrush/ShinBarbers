@@ -1,13 +1,27 @@
-/* src/styles/variables.css */
+/* src/styles/variables.css
+   Design tokens — change these to re-theme the whole site. */
 :root {
-    --primary-color: #0077B6;
-    --secondary-color: #03045E;
-    --background-dark: #333;
-    --background-darker: #222;
-    --text-color: #fff;
-    --font-family: 'Helvetica Neue', sans-serif;
-    --spacing-base: 1rem;
-    --padding-large: 4rem;
-    --padding-medium: 2rem;
-  }
-  
+	/* Palette */
+	--color-bg: #0b0b0c;
+	--color-bg-raised: #141414;
+	--color-bg-raised-2: #1c1c1c;
+	--color-text: #f5f3ee;
+	--color-text-muted: #a8a49b;
+	--color-border: #2a2a2a;
+	--color-accent: #c9a24b;
+	--color-accent-hover: #e0b95f;
+	--color-accent-contrast: #14120a;
+
+	/* Typography */
+	--font-display: 'Playfair Display', 'Georgia', serif;
+	--font-body: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
+
+	/* Spacing */
+	--spacing-base: 1rem;
+	--padding-large: 6rem;
+	--padding-medium: 3rem;
+	--content-width: 1120px;
+
+	/* Motion */
+	--transition-base: 0.2s ease;
+}

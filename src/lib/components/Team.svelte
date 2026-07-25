@@ -1,61 +1,60 @@
-<!-- Team -->
-<section id="team" class="team">
-  <h2>Meet Our Team</h2>
-  <div class="team-members">
-    <div class="team-member">
-      <img src="/placeholder-team-pic_small.jpg" alt="Barber 1" />
-      <h3>John Doe</h3>
-      <p>Specialist in fades and beard trims.</p>
-    </div>
-    <div class="team-member">
-      <img src="/placeholder-team-pic_small.jpg" alt="Barber 2" />
-      <h3>Jane Smith</h3>
-      <p>Expert in modern cuts and styling.</p>
-    </div>
-    <!-- Add more barbers as needed -->
-     <!-- Background colour was #333 -->
-  </div>
+<script>
+	import { team } from '$lib/data/site.js';
+	import { reveal } from '$lib/actions/reveal.js';
+</script>
+
+<section id="team" class="team-section" use:reveal>
+	<div class="section-inner">
+		<span class="eyebrow">Our People</span>
+		<h2 class="section-heading">Meet the Team</h2>
+		<div class="members">
+			{#each team as person}
+				<div class="member">
+					<img src={person.image} alt={person.name} loading="lazy" />
+					<h3>{person.name}</h3>
+					<p class="role">{person.role}</p>
+					<p class="bio">{person.bio}</p>
+				</div>
+			{/each}
+		</div>
+	</div>
 </section>
 
 <style>
-  .team {
-    padding: 4rem 1rem;
-    Background: #222 ;
-    color: #fff;
-    text-align: center;
-  }
-  .team h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #fff;
-  }
-  .team-membersx {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 2rem;
-    justify-items: center;
-    justify-content: center;
-  }
-  .team-members {
-  display: flex;
-  justify-content: center;  /* Centers the content horizontally */
-  gap: 2rem;
-  flex-wrap: wrap;  /* Allows for responsive wrapping */
-}
-  .team-member img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    object-fit: cover;
-  }
-  .team-member h3 {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    color: #fff;
-  }
-  .team-member p {
-    font-size: 1rem;
-    color: #aaa;
-  }
+	.team-section {
+		background: var(--color-bg-raised);
+	}
+	.members {
+		display: flex;
+		justify-content: center;
+		gap: 2rem;
+		flex-wrap: wrap;
+	}
+	.member {
+		width: 220px;
+	}
+	.member img {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		border: 2px solid var(--color-accent);
+		object-fit: cover;
+	}
+	.member h3 {
+		font-size: 1.3rem;
+		margin: 1rem 0 0.15rem;
+		color: var(--color-text);
+	}
+	.role {
+		color: var(--color-accent);
+		font-size: 0.85rem;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		margin: 0 0 0.5rem;
+	}
+	.bio {
+		font-size: 0.95rem;
+		color: var(--color-text-muted);
+		margin: 0;
+	}
 </style>

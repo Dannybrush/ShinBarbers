@@ -1,42 +1,44 @@
-<!--   Gallery.svelte -->  
 <script>
-  export let images = [
-    //'/logo.jpg',
-    '/stock-1.jpg',
-    '/stock-2.jpg',
-    '/stock-3.jpg'
-  ];
+	import { gallery } from '$lib/data/site.js';
+	import { reveal } from '$lib/actions/reveal.js';
 </script>
 
-<style>
-  .gallery {
-    padding: 4rem 4rem;
-    background: #111;
-    color: #fff;
-    text-align: right;
-  }
-  h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  .gallery-images {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
-  }
-  .gallery-image img {
-    width: 100%;
-    border-radius: 0.5rem;
-  }
-</style>
-
-<section class="gallery">
-  <h2>Gallery</h2>
-  <div class="gallery-images">
-    {#each images as image}
-      <div class="gallery-image">
-        <img src={image} alt="Gallery Image">
-      </div>
-    {/each}
-  </div>
+<section id="gallery" class="gallery" use:reveal>
+	<div class="section-inner">
+		<span class="eyebrow">Our Work</span>
+		<h2 class="section-heading">Gallery</h2>
+		<div class="gallery-grid">
+			{#each gallery as image}
+				<div class="gallery-item">
+					<img src={image.src} alt={image.alt} loading="lazy" />
+				</div>
+			{/each}
+		</div>
+	</div>
 </section>
+
+<style>
+	.gallery {
+		background: var(--color-bg);
+	}
+	.gallery-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 1rem;
+	}
+	.gallery-item {
+		overflow: hidden;
+		border-radius: 0.5rem;
+		aspect-ratio: 4 / 3;
+	}
+	.gallery-item img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		display: block;
+		transition: transform 0.4s ease;
+	}
+	.gallery-item:hover img {
+		transform: scale(1.06);
+	}
+</style>
